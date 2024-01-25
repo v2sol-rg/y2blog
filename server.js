@@ -27,6 +27,17 @@ app.get('/api/books', (req, res) => {
   res.json(books);
 });
 
+app.get('/api/books/:id', async (req, res) => {
+  fs.readFile("./db/booklist.json", function(err, data) {       
+    // Check for errors 
+    if (err) throw err;    
+    // Converting to JSON 
+    books = JSON.parse(data); 
+  });
+  const booksObj = await books.filter((bk) =>  bk.id == req.params.id)
+  res.json(booksObj);
+});
+
 
 app.post('/login', (req, res) => {
   fs.readFile("./db/login.json", function(err, data) {       
