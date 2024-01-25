@@ -67,6 +67,7 @@ app.patch('/updatebook', (req, res) => {
   books.forEach((boo) => {
     if(boo.id === req.body.id) {
       boo['story'] = req.body.story
+      boo['genre'] = req.body.genre
     }
   })
   console.log(books)
