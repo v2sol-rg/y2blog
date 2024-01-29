@@ -1,3 +1,3 @@
 {
-    "intro": "A website serves as a digital presence, reflecting the identity and narrative of its owner. For a design agency, it acts as a face, demonstrating our capabilities. A well-crafted website not only attracts the right clients but also brings in projects that align with our interests. Bearing this in mind, we initiated our website redesign by focusing on its core essence."
+    "intro": "An online book review app created by React and node. Database not configured, however backed db set to handle by node. Application has two roles. Admin and visitor. for visitor, everyone can login through email and password, where admin conly required a special passkey: currently set as 'admin'. Admin will assign book review task for visitor so when visitor will login, they can see their task and complete task before expiry date (i.e. 5 days after assign task)"
 }
